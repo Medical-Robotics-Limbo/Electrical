@@ -1,0 +1,4 @@
+Change Component Designator: OldDesignator=PAD1 NewDesignator=VCC
+Change Component Designator: OldDesignator=PAD2 NewDesignator=DATA
+Change Component Designator: OldDesignator=PAD3 NewDesignator=CLK
+Change Component Designator: OldDesignator=PAD5 NewDesignator=GND

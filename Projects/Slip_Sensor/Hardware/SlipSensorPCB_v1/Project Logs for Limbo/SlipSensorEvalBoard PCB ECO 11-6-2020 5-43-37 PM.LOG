@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=ID_SEL Pin=ID_SEL-1
+Added Component: Designator=R1(RES_0603_SAM-L)
+Add component (AddParameter): Name = "Built_By"; Value = "EMA_Rocco"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2018 Accelerated Designs. All rights reserved"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "RC0603F4991CS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SourceLibrary"; Value = "Samsung_2019-08-29"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Samsung"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=DATA Pin=R1-1
+Added Pin To Net: NetName=VCC Pin=R1-2
+Added Member To Class: ClassName=SlipSensorEvalBoard Member=Component R1 4.99kOhms
+Added Room: Name=SlipSensorEvalBoard

@@ -1,0 +1,18 @@
+Change Component Description : Designator=C3 Old Description=4.7µF ±20% 6.3V Ceramic Capacitor X6S 0508 (1220 Metric) New Description=4.7µF ±20% 4V Ceramic Capacitor X6S 0306 (0816 Metric)
+Change Component Library : Designator=C3 Old Library=Limbo.IntLib New Library=Limbo.SchLib
+Change Component Library : Designator=PAD1 Old Library=Limbo.IntLib New Library=Limbo.SchLib
+Change Component Library : Designator=PAD2 Old Library=Limbo.IntLib New Library=Limbo.SchLib
+Change Component Library : Designator=PAD3 Old Library=Limbo.IntLib New Library=Limbo.SchLib
+Change Component Library : Designator=PAD5 Old Library=Limbo.IntLib New Library=Limbo.SchLib
+Change component parameters: Designator = "C3" ("C3"); Footprint = "CAP_4.7UF"; UniqueID = "\MAGWFWQF" ("\MAGWFWQF")
+Change component parameters (AddParameter): Name = "Category"; Value = "Capacitor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/AWK107C6475MV-T/Taiyo%20Yuden/view-part/2039935/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Digi-Key_Part_Number"; Value = "587-5162-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Taiyo Yuden"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "AWK107C6475MV-T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0816 Taiyo Yuden"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/AWK107C6475MV-T/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/AWK107C6475MV-T/Taiyo%20Yuden/view-part/2039935/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=ID_SEL Pin=ID_SEL-2
+Added Pin To Net: NetName=VCC Pin=ID_SEL-3

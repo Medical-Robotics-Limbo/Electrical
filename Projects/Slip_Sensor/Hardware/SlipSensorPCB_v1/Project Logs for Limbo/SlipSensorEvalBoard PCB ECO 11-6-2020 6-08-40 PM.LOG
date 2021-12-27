@@ -1,0 +1,6 @@
+Change Component Designator: OldDesignator=CLK NewDesignator=CLK1
+Change Component Designator: OldDesignator=DATA NewDesignator=DATA1
+Change Component Designator: OldDesignator=GND NewDesignator=GND1
+Change Component Designator: OldDesignator=ID_SEL NewDesignator=ID_SEL1
+Change Component Designator: OldDesignator=VCC NewDesignator=VCC1
+Added Pin To Net: NetName=ID_SEL Pin=ID_SEL1-2

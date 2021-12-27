@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=GND Pin=R1-2
+Removed Member From Class: ClassName=SlipSensorEvalBoard Member=R1
+Removed Member From Class: ClassName=SlipSensorEvalBoard Member=R2
+Added Component: Designator=SMD1(Wirepad)
+Added Component: Designator=SMD2(Wirepad)
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=GND Pin=PAD1-1
+Added Pin To Net: NetName=GND Pin=SMD1-1
+Added Pin To Net: NetName=GND Pin=SMD2-1
+Added Pin To Net: NetName=GND Pin=U1-1
+Added Pin To Net: NetName=GND Pin=U1-3
+Added Pin To Net: NetName=GND Pin=U1-8
+Added Member To Class: ClassName=SlipSensorEvalBoard Member=Component SMD1 Wirepad
+Added Member To Class: ClassName=SlipSensorEvalBoard Member=Component SMD2 Wirepad

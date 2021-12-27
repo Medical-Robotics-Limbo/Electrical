@@ -1,0 +1,3 @@
+Change Component Comment : Designator=SMD1 Old Comment=Wirepad New Comment=ID_SEL
+Added Pin To Net: NetName=GND Pin=SMD1-1
+Added Pin To Net: NetName=ID_SEL Pin=SMD1-1

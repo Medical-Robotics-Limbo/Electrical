@@ -1,0 +1,8 @@
+Change Component Designator: OldDesignator=SMD2 NewDesignator=PAD_DATA
+Change Component Designator: OldDesignator=SMD3 NewDesignator=PAD_CLK
+Change Component Designator: OldDesignator=SMD4 NewDesignator=PAD_GND
+Change Component Designator: OldDesignator=VCC NewDesignator=PAD_VCC
+Change Net Name : Old Net Name=NetSMD2_1 New Net Name=NetPAD_DATA_1
+Change Net Name : Old Net Name=NetSMD3_1 New Net Name=NetPAD_CLK_1
+Added Member To Class: ClassName=SlipSensorEvalBoard Member=Component R? Res2
+Added Member To Class: ClassName=SlipSensorEvalBoard Member=Component R? Res2

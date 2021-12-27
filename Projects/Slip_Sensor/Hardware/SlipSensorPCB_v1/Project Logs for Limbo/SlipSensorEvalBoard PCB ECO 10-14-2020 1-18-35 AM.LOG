@@ -1,0 +1,62 @@
+Removed Pin From Net: NetName=VCC Pin=R?-2
+Removed Member From Class: ClassName=SlipSensorEvalBoard Member=R?
+Change Component Footprint: Designator=C2 Old Footprint=RAD-0.3 New Footprint=cap_0.1uF
+Change Component Footprint: Designator=C3 Old Footprint=RAD-0.3 New Footprint=cap_4.7uF
+Change Component Footprint: Designator=C1 Old Footprint=RAD-0.3 New Footprint=cap_10uF
+Change Component Comment : Designator=C2 Old Comment=Cap New Comment=0.1uF
+Change Component Comment : Designator=C3 Old Comment=Cap New Comment=4.7uF
+Change Component Comment : Designator=C1 Old Comment=Cap New Comment=10uF
+Change Component Designator: OldDesignator=CLK NewDesignator=PAD3
+Change Component Designator: OldDesignator=DATA NewDesignator=PAD2
+Change Component Designator: OldDesignator=GND NewDesignator=PAD5
+Change Component Designator: OldDesignator=VCC NewDesignator=PAD1
+Change component parameters: Designator = "C1" ("C1"); Footprint = "RAD-0.3"; UniqueID = "\ZOAXQNHG" ("\ZOAXQNHG")
+Change component parameters (AddParameter): Name = "Category"; Value = "Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category 2"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/JWK212C6106MD-T/Taiyo%20Yuden/view-part/924316/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Digi-Key_Part_Number"; Value = "587-3114-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Taiyo Yuden"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "JWK212C6106MD-T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "1220 Taiyo Yuden"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/JWK212C6106MD-T/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/JWK212C6106MD-T/Taiyo%20Yuden/view-part/924316/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C2" ("C2"); Footprint = "RAD-0.3"; UniqueID = "\YIBNSPPX" ("\YIBNSPPX")
+Change component parameters (AddParameter): Name = "Category"; Value = "Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category 2"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/JWK105C7104MP-F/Taiyo%20Yuden/view-part/554958/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Digi-Key_Part_Number"; Value = "587-2152-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Taiyo Yuden"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "JWK105C7104MP-F"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0510 Taiyo Yuden"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/JWK105C7104MP-F/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/JWK105C7104MP-F/Taiyo%20Yuden/view-part/554958/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C3" ("C3"); Footprint = "RAD-0.3"; UniqueID = "\MAGWFWQF" ("\MAGWFWQF")
+Change component parameters (AddParameter): Name = "Category"; Value = "Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category 2"; Value = "Ceramic Capacitors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/JWK212C6475MD-T/Taiyo%20Yuden/view-part/1862133/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Digi-Key_Part_Number"; Value = "587-6175-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Taiyo Yuden"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "JWK212C6475MD-T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "1220 Taiyo Yuden"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/JWK212C6475MD-T/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/JWK212C6475MD-T/Taiyo%20Yuden/view-part/1862133/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=PAD4(Wirepad)
+Added Component: Designator=R1(opt_jumper)
+Added Component: Designator=R2(opt_jumper)
+Added Pin To Net: NetName=GND Pin=R1-2
+Added Pin To Net: NetName=VCC Pin=R2-2
+Change Net Name : Old Net Name=NetPAD_CLK_1 New Net Name=NetPAD3_1
+Change Net Name : Old Net Name=NetPAD_DATA_1 New Net Name=NetPAD2_1
+Added Pin To Net: NetName=NetPAD4_1 Pin=PAD4-1
+Added Pin To Net: NetName=NetPAD4_1 Pin=U1-7
+Added Net: Name=NetPAD4_1
+Added Pin To Net: NetName=NetR1_1 Pin=R1-1
+Added Pin To Net: NetName=NetR1_1 Pin=R2-1
+Added Pin To Net: NetName=NetR1_1 Pin=U1-8
+Added Net: Name=NetR1_1
+Added Member To Class: ClassName=SlipSensorEvalBoard Member=Component PAD4 Wirepad
+Added Member To Class: ClassName=SlipSensorEvalBoard Member=Component R1 0R
+Added Member To Class: ClassName=SlipSensorEvalBoard Member=Component R2 0R

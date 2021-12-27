@@ -1,0 +1,11 @@
+Change Component Footprint: Designator=PAD1 Old Footprint=WIREPAD New Footprint=Holepad
+Change Component Footprint: Designator=PAD2 Old Footprint=WIREPAD New Footprint=Holepad
+Change Component Footprint: Designator=PAD3 Old Footprint=WIREPAD New Footprint=Holepad
+Change Component Footprint: Designator=PAD4 Old Footprint=WIREPAD New Footprint=Holepad
+Change Component Footprint: Designator=PAD5 Old Footprint=WIREPAD New Footprint=Holepad
+Change Component Comment : Designator=PAD1 Old Comment=Wirepad New Comment=Holepad
+Change Component Comment : Designator=PAD2 Old Comment=Wirepad New Comment=Holepad
+Change Component Comment : Designator=PAD3 Old Comment=Wirepad New Comment=Holepad
+Change Component Comment : Designator=PAD4 Old Comment=Wirepad New Comment=Holepad
+Change Component Comment : Designator=PAD5 Old Comment=Wirepad New Comment=Holepad
+Added Room: Name=SlipSensorEvalBoard

@@ -1,0 +1,20 @@
+Component Name : PAT9125
+
+Part Count : 2
+
+Part : Q?
+     Pins - (Normal) : 0
+          Hidden Pins : 
+
+Part : Q?
+     Pins - (Normal) : 8
+          VLD            1              Power
+          VDDA           2              Power
+          VDD            3              Power
+          VSS            4              Power
+          SCLK/SCL       5              Input
+          SDIO/SDA       6              I/O
+          MOTION         7              Output
+          NCS/ID_SEL     8              Input
+          Hidden Pins : 
+

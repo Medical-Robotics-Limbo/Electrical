@@ -1,0 +1,5 @@
+Change Component Designator: Old Designator=CLK New Designator=CLK1
+Change Component Designator: Old Designator=DATA New Designator=DATA1
+Change Component Designator: Old Designator=GND New Designator=GND1
+Change Component Designator: Old Designator=ID_SEL New Designator=ID_SEL1
+Change Component Designator: Old Designator=VCC New Designator=VCC1

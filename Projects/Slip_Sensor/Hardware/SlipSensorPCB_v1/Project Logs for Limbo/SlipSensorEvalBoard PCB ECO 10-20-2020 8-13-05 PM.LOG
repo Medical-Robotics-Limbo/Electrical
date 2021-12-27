@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=ID_SEL Pin=SMD1-1
+Change Component Comment : Designator=SMD1 Old Comment=ID_SEL New Comment=Wirepad
+Added Pin To Net: NetName=GND Pin=SMD1-1
+Added Pin To Net: NetName=ID_SEL Pin=SMD1-2
+Added Pin To Net: NetName=VCC Pin=SMD1-3

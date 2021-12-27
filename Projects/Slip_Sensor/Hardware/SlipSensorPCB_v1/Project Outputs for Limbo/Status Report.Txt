@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Limbo.PrjPcb]
+   Generated File[SlipSensorEvalBoard.TXT]
+   Generated File[SlipSensorEvalBoard.LDP]
+   Generated File[SlipSensorEvalBoard.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 6:43:03 PM On 12/28/2020

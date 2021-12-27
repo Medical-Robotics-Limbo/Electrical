@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=GND Pin=ID_SEL-ID_SEL
+Change Component Footprint: Designator=ID_SEL Old Footprint= New Footprint=Wirepad
+Change Component Designator: OldDesignator=CLK NewDesignator=PAD3
+Change Component Designator: OldDesignator=DATA NewDesignator=PAD2
+Change Component Designator: OldDesignator=GND NewDesignator=PAD5
+Change Component Designator: OldDesignator=VCC NewDesignator=PAD1
+Added Pin To Net: NetName=GND Pin=ID_SEL-1
+Added Room: Name=SlipSensorEvalBoard

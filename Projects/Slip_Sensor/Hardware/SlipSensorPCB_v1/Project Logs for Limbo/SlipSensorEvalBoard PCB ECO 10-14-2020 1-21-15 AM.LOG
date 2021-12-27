@@ -1,0 +1,4 @@
+Change Net Name : Old Net Name=NetPAD2_1 New Net Name=DATA
+Change Net Name : Old Net Name=NetPAD3_1 New Net Name=CLK
+Change Net Name : Old Net Name=NetPAD4_1 New Net Name=MOT
+Added Member To Class: ClassName=SlipSensorEvalBoard Member=Component PAD3 Wirepad

@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=ID_SEL Pin=ID_SEL-1
+Removed Pin From Net: NetName=DATA Pin=R1-1
+Removed Pin From Net: NetName=VCC Pin=R1-2
+Removed Member From Class: ClassName=SlipSensorEvalBoard Member=R1
+Added Component: Designator=MOT(Holepad)
+Added Pin To Net: NetName=MOT Pin=MOT-1
+Added Pin To Net: NetName=MOT Pin=U1-7
+Added Net: Name=MOT
+Added Member To Class: ClassName=SlipSensorEvalBoard Member=Component MOT Holepad

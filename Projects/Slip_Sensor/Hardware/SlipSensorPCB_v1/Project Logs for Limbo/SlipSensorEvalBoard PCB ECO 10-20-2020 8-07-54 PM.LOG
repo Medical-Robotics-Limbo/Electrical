@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=GND Pin=C1-2
+Removed Pin From Net: NetName=GND Pin=C2-2
+Removed Pin From Net: NetName=GND Pin=PAD1-1
+Removed Pin From Net: NetName=GND Pin=SMD2-1
+Removed Pin From Net: NetName=GND Pin=U1-1
+Removed Pin From Net: NetName=GND Pin=U1-3
+Removed Pin From Net: NetName=GND Pin=U1-8
+Removed Member From Class: ClassName=SlipSensorEvalBoard Member=SMD2
+Change Component Library : Designator=SMD1 Old Library=Limbo.IntLib New Library=Limbo.SchLib
+Added Pin To Net: NetName=ID_SEL Pin=SMD1-1
+Added Pin To Net: NetName=ID_SEL Pin=U1-8
+Added Net: Name=ID_SEL
+Added Pin To Net: NetName=VCC Pin=C1-2
+Added Pin To Net: NetName=VCC Pin=C2-2
+Added Pin To Net: NetName=VCC Pin=PAD1-1
+Added Pin To Net: NetName=VCC Pin=SMD1-1
+Added Pin To Net: NetName=VCC Pin=U1-1
+Added Pin To Net: NetName=VCC Pin=U1-3
+Added Net: Name=VCC

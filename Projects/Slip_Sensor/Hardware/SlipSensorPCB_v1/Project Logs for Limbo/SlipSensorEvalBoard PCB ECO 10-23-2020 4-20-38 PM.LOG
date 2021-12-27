@@ -1,0 +1,12 @@
+Change Component Footprint: Designator=C3 Old Footprint=CAP_4.7UF New Footprint=CAPC0816X55N
+Change Component Footprint: Designator=C1 Old Footprint=CAP_10UF New Footprint=CAPC0816X55N
+Change component parameters: Designator = "C1" ("C1"); Footprint = "CAP_10UF"; UniqueID = "\IEBFHIQF" ("\IEBFHIQF")
+Change component parameters (AddParameter): Name = "Category"; Value = "Capacitor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/PWK107C6106MV-T/Taiyo%20Yuden/view-part/2037078/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Digi-Key_Part_Number"; Value = "587-5158-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Taiyo Yuden"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "PWK107C6106MV-T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0816 Taiyo Yuden"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/PWK107C6106MV-T/?ref=eda"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/PWK107C6106MV-T/Taiyo%20Yuden/view-part/2037078/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"

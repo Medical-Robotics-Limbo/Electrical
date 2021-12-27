@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=ID_SEL Pin=ID_SEL1-1
+Change Component Designator: OldDesignator=CLK1 NewDesignator=CLK
+Change Component Designator: OldDesignator=DATA1 NewDesignator=DATA
+Change Component Designator: OldDesignator=GND1 NewDesignator=GND
+Change Component Designator: OldDesignator=VCC1 NewDesignator=VCC
+Added Member To Class: ClassName=SlipSensorEvalBoard Member=Component DATA Holepad
