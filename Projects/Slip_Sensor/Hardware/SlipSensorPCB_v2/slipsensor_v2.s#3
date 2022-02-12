@@ -90,15 +90,14 @@
 <smd name="P$4" x="0.55" y="3.173" dx="1.766" dy="0.5" layer="1" rot="R90"/>
 <smd name="P$9" x="0.65" y="1.6" dx="0.69" dy="0.69" layer="1" roundness="100" rot="R90"/>
 <text x="-1.143" y="0" size="0.8128" layer="25" rot="R90">&gt;NAME</text>
-<dimension x1="0" y1="3.2" x2="0" y2="0" x3="-1.9" y3="1.6" textsize="1.016" layer="49" visible="yes"/>
-<dimension x1="0" y1="3.2" x2="3.5" y2="3.2" x3="1.75" y3="7.05" textsize="1.016" layer="49" width="0.1" visible="yes"/>
-<polygon width="0.001" layer="1">
+<polygon width="0.0001" layer="1">
+<vertex x="3.2" y="2.3"/>
 <vertex x="3.2" y="2.2"/>
 <vertex x="2.8" y="2.2"/>
 <vertex x="2.7" y="2.3"/>
-<vertex x="2.7" y="4.056"/>
-<vertex x="3.2" y="4.056"/>
 </polygon>
+<dimension x1="0" y1="3.2" x2="0" y2="0" x3="-1.9" y3="1.6" textsize="1.016" layer="49" visible="yes"/>
+<dimension x1="0" y1="3.2" x2="3.5" y2="3.2" x3="1.75" y3="7.05" textsize="1.016" layer="49" width="0.1" visible="yes"/>
 </package>
 </packages>
 <symbols>
@@ -4526,29 +4525,29 @@ Source: AVX .. aphvc.pdf</description>
 </classes>
 <parts>
 <part name="U$1" library="Limbo" deviceset="PAT9125EL" device=""/>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="10uF"/>
-<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value=".1uF"/>
-<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="4.7uF"/>
+<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2"/>
+<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2"/>
+<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="PAT9125EL" x="63.5" y="45.72" smashed="yes">
-<attribute name="NAME" x="53.34" y="57.658" size="1.778" layer="95"/>
+<instance part="U$1" gate="PAT9125EL" x="68.58" y="48.26" smashed="yes">
+<attribute name="NAME" x="58.42" y="60.198" size="1.778" layer="95"/>
 </instance>
-<instance part="C1" gate="G$1" x="-2.54" y="48.26" smashed="yes">
-<attribute name="NAME" x="-1.016" y="48.641" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-1.016" y="43.561" size="1.778" layer="96"/>
+<instance part="C1" gate="G$1" x="-2.54" y="50.8" smashed="yes">
+<attribute name="NAME" x="-1.016" y="51.181" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-1.016" y="46.101" size="1.778" layer="96"/>
 </instance>
-<instance part="C2" gate="G$1" x="10.16" y="48.26" smashed="yes">
-<attribute name="NAME" x="11.684" y="48.641" size="1.778" layer="95"/>
-<attribute name="VALUE" x="11.684" y="43.561" size="1.778" layer="96"/>
+<instance part="C2" gate="G$1" x="10.16" y="50.8" smashed="yes">
+<attribute name="NAME" x="11.684" y="51.181" size="1.778" layer="95"/>
+<attribute name="VALUE" x="11.684" y="46.101" size="1.778" layer="96"/>
 </instance>
-<instance part="C3" gate="G$1" x="22.86" y="48.26" smashed="yes">
-<attribute name="NAME" x="24.384" y="48.641" size="1.778" layer="95"/>
-<attribute name="VALUE" x="24.384" y="43.561" size="1.778" layer="96"/>
+<instance part="C3" gate="G$1" x="22.86" y="50.8" smashed="yes">
+<attribute name="NAME" x="24.384" y="51.181" size="1.778" layer="95"/>
+<attribute name="VALUE" x="24.384" y="46.101" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -4557,83 +4556,81 @@ Source: AVX .. aphvc.pdf</description>
 <net name="3V3" class="0">
 <segment>
 <pinref part="U$1" gate="PAT9125EL" pin="VLD"/>
-<wire x1="50.8" y1="53.34" x2="40.64" y2="53.34" width="0.1524" layer="91"/>
-<label x="40.64" y="53.34" size="1.778" layer="95"/>
+<wire x1="55.88" y1="55.88" x2="45.72" y2="55.88" width="0.1524" layer="91"/>
+<label x="45.72" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="PAT9125EL" pin="VDD"/>
-<wire x1="50.8" y1="43.18" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
-<label x="40.64" y="43.18" size="1.778" layer="95"/>
+<wire x1="55.88" y1="45.72" x2="45.72" y2="45.72" width="0.1524" layer="91"/>
+<label x="45.72" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="10.16" y1="50.8" x2="10.16" y2="53.34" width="0.1524" layer="91"/>
-<label x="10.16" y="53.34" size="1.778" layer="95" rot="R90" xref="yes"/>
+<wire x1="10.16" y1="53.34" x2="10.16" y2="55.88" width="0.1524" layer="91"/>
+<label x="10.16" y="55.88" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="-2.54" y1="53.34" x2="-2.54" y2="50.8" width="0.1524" layer="91"/>
-<label x="-2.54" y="53.34" size="1.778" layer="95" rot="R90" xref="yes"/>
+<wire x1="-2.54" y1="55.88" x2="-2.54" y2="53.34" width="0.1524" layer="91"/>
+<label x="-2.54" y="55.88" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="-2.54" y1="43.18" x2="-2.54" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="45.72" x2="-2.54" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="22.86" y1="40.64" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="43.18" x2="22.86" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="10.16" y1="43.18" x2="10.16" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="40.64" x2="10.16" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="40.64" x2="-2.54" y2="40.64" width="0.1524" layer="91"/>
-<junction x="10.16" y="40.64"/>
-<wire x1="10.16" y1="40.64" x2="10.16" y2="38.1" width="0.1524" layer="91"/>
-<label x="10.16" y="38.1" size="1.778" layer="95" rot="R270" xref="yes"/>
+<wire x1="10.16" y1="45.72" x2="10.16" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="43.18" x2="10.16" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="43.18" x2="-2.54" y2="43.18" width="0.1524" layer="91"/>
+<junction x="10.16" y="43.18"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="PAT9125EL" pin="VSS"/>
-<wire x1="50.8" y1="38.1" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
-<label x="40.64" y="38.1" size="1.778" layer="95"/>
+<wire x1="55.88" y1="40.64" x2="45.72" y2="40.64" width="0.1524" layer="91"/>
+<label x="45.72" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ID_SEL" class="0">
 <segment>
 <pinref part="U$1" gate="PAT9125EL" pin="ID_SEL"/>
-<wire x1="76.2" y1="53.34" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
-<label x="86.36" y="53.34" size="1.778" layer="95" rot="MR0"/>
+<wire x1="81.28" y1="55.88" x2="91.44" y2="55.88" width="0.1524" layer="91"/>
+<label x="91.44" y="55.88" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="MOTION" class="0">
 <segment>
 <pinref part="U$1" gate="PAT9125EL" pin="MOTION"/>
-<wire x1="76.2" y1="48.26" x2="86.36" y2="48.26" width="0.1524" layer="91"/>
-<label x="86.36" y="48.26" size="1.778" layer="95" rot="MR0"/>
+<wire x1="81.28" y1="50.8" x2="91.44" y2="50.8" width="0.1524" layer="91"/>
+<label x="91.44" y="50.8" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
 <pinref part="U$1" gate="PAT9125EL" pin="SDA"/>
-<wire x1="76.2" y1="43.18" x2="86.36" y2="43.18" width="0.1524" layer="91"/>
-<label x="86.36" y="43.18" size="1.778" layer="95" rot="MR0"/>
+<wire x1="81.28" y1="45.72" x2="91.44" y2="45.72" width="0.1524" layer="91"/>
+<label x="91.44" y="45.72" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="SCL" class="0">
 <segment>
 <pinref part="U$1" gate="PAT9125EL" pin="SCL"/>
-<wire x1="76.2" y1="38.1" x2="86.36" y2="38.1" width="0.1524" layer="91"/>
-<label x="86.36" y="38.1" size="1.778" layer="95" rot="MR0"/>
+<wire x1="81.28" y1="40.64" x2="91.44" y2="40.64" width="0.1524" layer="91"/>
+<label x="91.44" y="40.64" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="VDDA" class="0">
 <segment>
 <pinref part="U$1" gate="PAT9125EL" pin="VDDA"/>
-<wire x1="50.8" y1="48.26" x2="40.64" y2="48.26" width="0.1524" layer="91"/>
-<label x="40.64" y="48.26" size="1.778" layer="95"/>
+<wire x1="55.88" y1="50.8" x2="45.72" y2="50.8" width="0.1524" layer="91"/>
+<label x="45.72" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="50.8" x2="22.86" y2="53.34" width="0.1524" layer="91"/>
-<label x="22.86" y="53.34" size="1.778" layer="95" rot="R90" xref="yes"/>
+<wire x1="22.86" y1="53.34" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
+<label x="22.86" y="55.88" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>
