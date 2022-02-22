@@ -9,7 +9,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  test.setMux(3);
-  Serial.print(test.pushMux());
+  test.setChannel(3);
+  Serial.print(test.read());
   Serial.print("\n");
 }

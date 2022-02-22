@@ -37,7 +37,7 @@ void HP4067::begin() {
     @brief Sets the data for  the multiplexer, takes the channel you want to output as a parameter, int from 0-15 inclusive
 */
 
-void HP4067::setMux(uint8_t channel){
+void HP4067::setChannel(uint8_t channel){
 // Write to channel 0 
   if(0b0001 & channel){
     digitalWrite(_s0, HIGH);
@@ -72,7 +72,7 @@ void HP4067::setMux(uint8_t channel){
     @brief Pushes the multiplexer with data from the setMux function
 */
 
-int HP4067::pushMux(){
+int HP4067::read(){
 
   //read the value at the SIG pin
   int val = analogRead(_sig);

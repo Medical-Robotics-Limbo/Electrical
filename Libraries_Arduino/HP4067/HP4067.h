@@ -16,8 +16,8 @@ public:
   HP4067(uint8_t s0, uint8_t s1, uint8_t s2, uint8_t s3, uint8_t sig);
 
   void begin();
-  void setMux(uint8_t channel);
-  int pushMux();
+  void setChannel(uint8_t channel);
+  int read();
 
 private:
   uint8_t _s0, _s1, _s2, _s3, _sig;
