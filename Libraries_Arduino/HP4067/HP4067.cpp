@@ -29,8 +29,6 @@ void HP4067::begin() {
   digitalWrite(_s1, LOW);
   digitalWrite(_s2, LOW);
   digitalWrite(_s3, LOW);
-
-  Serial.begin(9600);
 }
 
 /*
