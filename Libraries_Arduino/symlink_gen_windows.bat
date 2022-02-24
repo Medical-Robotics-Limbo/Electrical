@@ -21,6 +21,6 @@
 ::    cmd /c rmdir %target%\ExternalLibraries
 ::    cmd /c rmdir %target%\ControlLibraries
 ::    cmd /c rmdir %target%\Utility
-::    cmd /c rmdir %target%\.git
+    cmd /c rmdir %target%\.git
 
 cmd /k
