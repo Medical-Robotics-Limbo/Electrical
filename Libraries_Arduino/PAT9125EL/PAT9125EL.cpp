@@ -21,7 +21,7 @@ _id_address(id_address)
 /* 
     @brief Set up the sensor
  */
-void PAT9125EL::setup() {
+int PAT9125EL::setup() {
     // TODO: Make way to check if Wire.begin() has already been done
     Wire.begin();
     pinMode(_pin_motion, INPUT);
@@ -78,8 +78,13 @@ void PAT9125EL::setup() {
 //         Serial.println("ERROR: No connection with PAT9125EL");
 //     }
     }
+    else
+    { 
+        Serial.println("ERROR: PAT9125EL setup failed");
+        Serial.println("ERROR: No connection with PAT9125EL");
+        return -1;
+    }
 
-   
 }
 
 /*  
