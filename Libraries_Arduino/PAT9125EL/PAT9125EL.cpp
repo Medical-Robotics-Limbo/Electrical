@@ -1,4 +1,4 @@
-#include "Arduino.h"
+// #include "Arduino.h"
 #include "PAT9125EL.h"
 
 
@@ -84,7 +84,7 @@ int PAT9125EL::setup() {
         Serial.println("ERROR: No connection with PAT9125EL");
         return -1;
     }
-
+    return 0;
 }
 
 /*  

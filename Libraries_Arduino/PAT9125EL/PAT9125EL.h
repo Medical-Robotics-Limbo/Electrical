@@ -2,7 +2,7 @@
 #define PAT9125EL_h
 
 #include <Arduino.h>
-#include <WSWire.h>
+#include <Wire.h>
 #include <stdint.h>
 
 /* 
@@ -46,7 +46,7 @@
 class PAT9125EL {
     public:
         PAT9125EL(uint8_t id_address, uint8_t pin_SDA, uint8_t pin_SCL, uint8_t pin_motion);
-        void setup();
+        int setup();
         
         uint8_t get_id_address();
 
