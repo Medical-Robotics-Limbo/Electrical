@@ -2,8 +2,8 @@
 
 #define ID_ADDRESS 0x79   // slave address of the slip sensor (I2C)
 #define PIN_MOTION 10
-#define PIN_SCL 21
-#define PIN_SDA 20
+#define PIN_SCL 19
+#define PIN_SDA 18
 
 PAT9125EL slip_sensor_1(ID_ADDRESS, PIN_SDA, PIN_SCL, PIN_MOTION);
 
@@ -22,8 +22,10 @@ void loop() {
   slip_sensor_1.update();
   Serial.println("x data: ");
   Serial.println(slip_sensor_1.get_x());
+  Serial.println();
   Serial.println("y data: ");
   Serial.println(slip_sensor_1.get_y());
+  Serial.println();
   Serial.println();
   delay(500);
 

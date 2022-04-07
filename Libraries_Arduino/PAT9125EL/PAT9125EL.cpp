@@ -114,19 +114,16 @@ uint8_t PAT9125EL::_read_byte(uint8_t register_address)
     uint8_t read_data = 0;
 
     // I2C Protocol
-    
-    Wire.begin();
     Wire.beginTransmission(_id_address);
     Wire.write(register_address); 
 
-    Serial.println("trying to write I2C");
-    Serial.println(Wire.endTransmission());
+    Wire.endTransmission();
     
     Wire.requestFrom(_id_address, 1);
     
-    if (Wire.available()==1) {
+    while(Wire.available()) {
       read_data = Wire.read();
-    }
+    } 
     
     Wire.endTransmission();
 
@@ -140,7 +137,12 @@ uint8_t PAT9125EL::_read_byte(uint8_t register_address)
 // checks if the PID of the sensor is 0x31
 uint8_t PAT9125EL::checkConnection() 
 {    
-    return _read_byte(0x00) == 0x31;
+    if (_read_byte(0x00) == 0x31) {
+        return 1;
+    } else {
+        Serial.println("PAT9125EL not connected.");
+        return 0;
+    }
 }
 
 /* 
@@ -153,7 +155,7 @@ uint8_t PAT9125EL::checkMotion()
     // return !(digitalRead(_pin_motion));      
 
     // use IC internal register to check motion data readiness
-    return _read_byte(PAT9125_MOTION) == 0b10000000;    // motion data ready to read when bit 7 is 1
+    return _read_byte(PAT9125_MOTION) & 0b10000000;    // motion data ready to read when bit 7 is 1
 
 }
 
@@ -163,33 +165,25 @@ uint8_t PAT9125EL::checkMotion()
  */
 void PAT9125EL::update()
 {
-    update_x();
-    update_y();
-}
-
-/* 
-    @brief Update the class data members for position and change in position in x-axis when called.
- */
-void PAT9125EL::update_x()
-{
-    if (_read_byte(PAT9125_MOTION) & 0b10000000)
-    {
-        _dx =  ((_read_byte(PAT9125_DELTA_XY_HI) << 4) & 0xF00)     // shift to get upper 4 bits of change in x axis
-                | _read_byte(PAT9125_DELTA_X_LO);      // lower 8 bits of change in x axis
-        _x += _dx;
-    }  
-}
-
-/* 
-    @brief Update the class data members for position and change in position in y-axis when called.
- */
-void PAT9125EL::update_y()
-{
+    int16_t dx = 0, dy = 0;
+    int16_t dxy_hi = 0;
+    int16_t dx_lo = 0, dx_hi = 0, dy_lo = 0, dy_hi = 0;
+    
     if (checkMotion()) {
-        _dy =  ((_read_byte(PAT9125_DELTA_XY_HI) << 8) & 0xF00)     // shift to get upper 4 bits of change in y axis
-                | _read_byte(PAT9125_DELTA_Y_LO);      // lower 8 bits of change in y axis
-        _y += _dy;
+        dxy_hi = _read_byte(PAT9125_DELTA_XY_HI);
+        dx_lo = _read_byte(PAT9125_DELTA_X_LO);
+        dy_lo = _read_byte(PAT9125_DELTA_Y_LO);
+        dx_hi = (dxy_hi << 4) & 0xF00;
+        dy_hi = (dxy_hi << 8) & 0xF00;
+
+        if(dx_hi & 0x800) dx_hi |= 0xF000;
+        if(dy_hi & 0x800) dy_hi |= 0xF000;
+
+        dx = dx_hi | dx_lo;
+        dy = dy_hi | dy_lo;
     }
+    _x += dx;
+    _y += dy;
 }
 
 /* 
@@ -198,7 +192,7 @@ void PAT9125EL::update_y()
  */
 long PAT9125EL::get_x()
 {
-    update();
+    // update();
     return _x;
 }
 
@@ -208,48 +202,8 @@ long PAT9125EL::get_x()
  */
 long PAT9125EL::get_y()
 {
-    update();
+    // update();
     return _y;
-}
-
-/* 
-    @brief Get the change in x distance since the last x-axis refresh.
-    @return Change in x-axis
- */
-long PAT9125EL::get_dx()
-{
-    return _dx;
-}
-
-/* 
-    @brief Get the change in y distance since the last y-axis refresh.
-    @return Change in y-axis
- */
-long PAT9125EL::get_dy()
-{
-    return _dy;
-}
-
-
-
-/* 
-    @brief Resets the change in distance in the x direction
- */
-long PAT9125EL::refresh_dx()
-{
-    long temp = _dx;
-    _dx = 0;
-    return temp;
-}
-
-/* 
-    @brief Resets the change in distance in the y direction
- */
-long PAT9125EL::refresh_dy()
-{
-    long temp = _dy;
-    _dy = 0;
-    return temp;
 }
 
 
@@ -321,8 +275,6 @@ void PAT9125EL::reset()
   delay(1);
   _x = 0;
   _y = 0;
-  _dx = 0;
-  _dy = 0;
 //   pat9125_b   = 0;
 //   pat9125_s   = 0;
 }
