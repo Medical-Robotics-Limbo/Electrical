@@ -1,5 +1,8 @@
 #include <SPI.h>
 
+int adcRead;
+int chan = 0;
+
 void setup() {
   // put your setup code here, to run once:
   SPI.setRX(4);
@@ -13,5 +16,9 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-
+  // send ADC channel to read, receives upper data bits 9:6
+  adcRead = SPI.write(chan << 3) << 6; 
+  // send dummy value, receives lower data bits 5:0
+  adcRead |= SPI.write(0x00) >> 2; // dummy value, shifted 3 to remove trailing zeros
+  
 }
