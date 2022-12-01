@@ -5,6 +5,8 @@ const uint8_t mot2 = 6;
 
 uint8_t angle;
 
+// Start tracking number of rotations instead of angle, 330 degrees is 3 spikes between high
+
 void setup() {
   // put your setup code here, to run once:
   pinMode(potPin, INPUT);
@@ -17,12 +19,24 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   updateAngle(); 
-  if (angle > 200) {
-    stopMotor();
-    }
-  else {
-    spinMotor(true);
-    }
+  delay(50);
+//  spinMotor(true);
+  
+//  for (int i = 0; i <= 360; i++) {
+//    Serial.println(i);
+//    do {
+//      spinMotor(true);
+//      updateAngle();
+//      } while (angle != i);
+//    stopMotor();
+//    delay(1000);
+//    }
+//  if (angle > 200) {
+//    stopMotor();
+//    }
+//  else {
+//    spinMotor(true);
+//    }
 //  spinMotor(true); 
 //  delay(1000);
 //  spinMotor(false);
@@ -31,7 +45,8 @@ void loop() {
 }
 
 void updateAngle(){
-  angle = map(analogRead(potPin), 0, 1023, 0, 330);
+//  angle = map(analogRead(potPin), 0, 256, 0, 331);
+  angle = analogRead(potPin);
   Serial.println(angle);
 }
 
