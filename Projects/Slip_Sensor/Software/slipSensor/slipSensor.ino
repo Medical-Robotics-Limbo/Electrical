@@ -21,13 +21,11 @@ void setup() {
 void loop() {
   slip_sensor_1.update();
   Serial.println("x data: ");
-  Serial.println(slip_sensor_1.get_x());
-  Serial.println();
+  Serial.println(slip_sensor_1.get_dx());
+
   Serial.println("y data: ");
-  Serial.println(slip_sensor_1.get_y());
-  Serial.println();
-  Serial.println();
-  Serial.print(sqrt(((slip_sensor_1.get_x())^2) + ((slip_sensor_1.get_y())^2)));      //the x-variable for plotting
+  Serial.println(slip_sensor_1.get_dy());
+
   Serial.print(",");              //seperator
   //Serial.println(slip_sensor_1.get_y());          //y-variable
   delay(500);

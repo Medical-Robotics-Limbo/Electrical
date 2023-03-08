@@ -165,7 +165,7 @@ uint8_t PAT9125EL::checkMotion()
  */
 void PAT9125EL::update()
 {
-    int16_t dx = 0, dy = 0;
+   
     int16_t dxy_hi = 0;
     int16_t dx_lo = 0, dx_hi = 0, dy_lo = 0, dy_hi = 0;
     
@@ -179,11 +179,15 @@ void PAT9125EL::update()
         if(dx_hi & 0x800) dx_hi |= 0xF000;
         if(dy_hi & 0x800) dy_hi |= 0xF000;
 
-        dx = dx_hi | dx_lo;
-        dy = dy_hi | dy_lo;
+        _dx = dx_hi | dx_lo;
+        _dy = dy_hi | dy_lo;
     }
-    _x += dx;
-    _y += dy;
+    else {
+      _dx = 0;
+      _dy = 0;
+    }  
+    _x += _dx;
+    _y += _dy;
 }
 
 /* 
@@ -205,8 +209,16 @@ long PAT9125EL::get_y()
     // update();
     return _y;
 }
-
-
+long PAT9125EL::get_dx()
+{
+    // update();
+    return _dx;
+}
+long PAT9125EL::get_dy()
+{
+    // update();
+    return _dy;
+}
 /* 
     @brief Get index of laser shutter time
         When the reflection of the laser is good for tracking, index is small
@@ -275,6 +287,8 @@ void PAT9125EL::reset()
   delay(1);
   _x = 0;
   _y = 0;
+  _dx = 0;
+  _dy = 0;
 //   pat9125_b   = 0;
 //   pat9125_s   = 0;
 }

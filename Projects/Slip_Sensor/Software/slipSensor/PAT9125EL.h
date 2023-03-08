@@ -70,6 +70,8 @@ class PAT9125EL {
     private:        
         int64_t _x = 0;
         int64_t _y = 0;
+        int64_t _dx = 0;
+        int64_t _dy = 0;
         uint8_t _xres = 20;
         uint8_t _yres = 20;
         
