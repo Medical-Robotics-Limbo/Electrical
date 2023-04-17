@@ -1,18 +1,29 @@
 uint8_t mot1;
 uint8_t mot2;
 
+uint8_t emg = 14;
+volatile boolean toggle = false;
+
 void setup() {
   // put your setup code here, to run once:
   setMotor(7, 6);
+  pinMode(emg, INPUT_PULLUP);
   Serial.begin(9600);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  spinMotor(true);
-  delay(1000);
-  spinMotor(false);
-  delay(1000);
+  stopMotor();
+  Serial.println(digitalRead(emg));
+  if(digitalRead(emg) == 0 && !toggle)
+  {
+    toggle = true;
+    spinMotor(true);
+    delay(4000);
+    spinMotor(false);
+    delay(2000);
+    toggle = false;
+  }
 }
 
 void setMotor(uint8_t _mot1, uint8_t _mot2) {
