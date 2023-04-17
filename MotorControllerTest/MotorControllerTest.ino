@@ -15,15 +15,15 @@ void loop() {
   // put your main code here, to run repeatedly:
   stopMotor();
   Serial.println(digitalRead(emg));
-  if(digitalRead(emg) == 0 && !toggle)
-  {
-    toggle = true;
+  // if(digitalRead(emg) == 0 && !toggle)
+  // {
+  //   toggle = true;
     spinMotor(true);
     delay(4000);
     spinMotor(false);
-    delay(2000);
-    toggle = false;
-  }
+    delay(4000);
+  //   toggle = false;
+  // }
 }
 
 void setMotor(uint8_t _mot1, uint8_t _mot2) {
