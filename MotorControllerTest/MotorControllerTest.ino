@@ -1,5 +1,15 @@
+#include <Encoder.h>
+
 uint8_t mot1;
 uint8_t mot2;
+
+uint8_t motWEnc1 = 10;
+uint8_t motWEnc2 = 11;
+
+uint8_t encodeA = 20;
+uint8_t encodeB = 21;
+
+//Encoder myEnc(encodeA, encodeB);
 
 uint8_t emg = 14;
 volatile boolean toggle = false;
@@ -8,6 +18,14 @@ void setup() {
   // put your setup code here, to run once:
   setMotor(7, 6);
   pinMode(emg, INPUT_PULLUP);
+
+  // pinMode(motWEnc1, OUTPUT);
+  // pinMode(motWEnc2, OUTPUT);
+  // digitalWrite(motWEnc1, LOW);
+  // digitalWrite(motWEnc2, LOW);
+
+  //myEnc.write(0);
+
   Serial.begin(9600);
 }
 
@@ -15,15 +33,23 @@ void loop() {
   // put your main code here, to run repeatedly:
   stopMotor();
   Serial.println(digitalRead(emg));
-  // if(digitalRead(emg) == 0 && !toggle)
-  // {
-  //   toggle = true;
+  //Serial.println(myEnc.read());
+
+  // digitalWrite(motWEnc1, HIGH);
+  // digitalWrite(motWEnc1, LOW);
+  // delay(2000);
+  // digitalWrite(motWEnc1, LOW);
+  // digitalWrite(motWEnc1, HIGH);
+
+  if(digitalRead(emg) == 0 && !toggle)
+  {
+    toggle = true;
     spinMotor(true);
     delay(4000);
     spinMotor(false);
     delay(4000);
-  //   toggle = false;
-  // }
+    toggle = false;
+  }
 }
 
 void setMotor(uint8_t _mot1, uint8_t _mot2) {
