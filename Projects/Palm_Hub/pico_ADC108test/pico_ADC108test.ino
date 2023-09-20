@@ -1,9 +1,13 @@
 #include <SPI.h>
+#include <Wire.h>
 
 unsigned int adcRead;
 uint8_t chan = 2;
 
 void setup() {
+  // I2C setup
+  Wire.begin();
+  
   Serial.begin(9600);
   // put your setup code here, to run once:
   // SPI API port numbers are GPIO NOT physical board
@@ -23,6 +27,22 @@ uint8_t channel(int chan) {
   return SPI.transfer(chan << 3) << 6;
 }
 
+void writeI2C(int chan, int data)
+{
+  Wire.beginTransmission(chan);
+  Wire.write(data)l
+  Wire.endTransmission();
+}
+
+uint8_t getI2C(int chan)
+{
+  Wire.requestfrom(chan);
+  if (Wire.available())
+  {
+    return Wire.read();
+  }
+}
+
 void loop() {
   adcRead = channel(chan);
   // send dummy value, receives lower data bits 5:0
@@ -30,5 +50,10 @@ void loop() {
   // Bitwise OR with above bits to get channel(9:6) + data(5:0)
   adcRead |= SPI.transfer(chan << 3) >> 2; // dummy value, shifted 2 to remove trailing zeros
   Serial.println(adcRead);
+
+  // I2C setup
+  writeI2C(0x1, 1);
+  getI2C(0x1);
+  
   delay(250);
 }
