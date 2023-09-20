@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "RTC4543-SA")(type "KiCad")(uri "/Users/sethwobig/Downloads/RTC4543-SA")(options "")(descr ""))
+)

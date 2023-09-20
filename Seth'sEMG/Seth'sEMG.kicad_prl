@@ -2,7 +2,7 @@
   "board": {
     "active_layer": 0,
     "active_layer_preset": "",
-    "auto_track_width": true,
+    "auto_track_width": false,
     "hidden_nets": [],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
@@ -36,7 +36,6 @@
       8,
       9,
       10,
-      11,
       12,
       13,
       14,
@@ -62,11 +61,11 @@
       35,
       36
     ],
-    "visible_layers": "fffffff_ffffffff",
+    "visible_layers": "801a00f_ffffffff",
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "tutorial 1.kicad_prl",
+    "filename": "Seth'sEMG.kicad_prl",
     "version": 3
   },
   "project": {
