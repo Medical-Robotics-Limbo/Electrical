@@ -28,7 +28,7 @@ void loop() {
   // send dummy value, receives lower data bits 5:0
   // ADC output is 6 bit with 2 extra 0s => >> 2
   // Bitwise OR with above bits to get channel(9:6) + data(5:0)
-  adcRead |= SPI.transfer(0x1a) >> 2; // dummy value, shifted 2 to remove trailing zeros
+  adcRead |= SPI.transfer(chan << 3) >> 2; // dummy value, shifted 2 to remove trailing zeros
   Serial.println(adcRead);
-  delay(50);
+  delay(250);
 }
