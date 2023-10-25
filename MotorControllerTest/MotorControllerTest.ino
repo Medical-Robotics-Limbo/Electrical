@@ -6,12 +6,12 @@ uint8_t mot2;
 uint8_t motWEnc1 = 10;
 uint8_t motWEnc2 = 11;
 
-uint8_t encodeA = 20;
-uint8_t encodeB = 17;
+uint8_t encodeA = 2;
+uint8_t encodeB = 3;
 
 const int MAX_TICKS_1 = 500;
 
-Encoder myEnc(encodeA, encodeB);
+//Encoder myEnc(encodeA, encodeB);
 
 uint8_t emg = 14;
 volatile boolean toggle = false;
@@ -20,12 +20,12 @@ void setup() {
   setMotor(7, 6);  
   // pinMode(emg, INPUT_PULLUP);
 
-  pinMode(motWEnc1, OUTPUT);
-  pinMode(motWEnc2, OUTPUT);
+  pinMode(encodeA, OUTPUT);
+  pinMode(encodeB, OUTPUT);
   digitalWrite(motWEnc1, LOW);
   digitalWrite(motWEnc2, LOW);
 
-  myEnc.write(0);
+  //myEnc.write(0);
 
   Serial.begin(9600);
 }
@@ -39,14 +39,12 @@ void loop() {
 
   // put your main code here, to run repeatedly:
   stopMotor();
-  //Serial.println(5);
   Serial.print("a: ");
   Serial.print(digitalRead(encodeA));
   Serial.print(" b: ");
   Serial.println(digitalRead(encodeB));
   // Serial.println(getFinger1Closed());
-
-  delay(100);
+  
   // digitalWrite(motWEnc1, HIGH);
   // digitalWrite(motWEnc2, LOW);
   // delay(2000);
@@ -93,6 +91,6 @@ void stopMotor() {
   digitalWrite(mot2, LOW);
   }
 
-double getFinger1Closed() {
-  return (double) myEnc.read() / (double) MAX_TICKS_1;
-}
+// double getFinger1Closed() {
+//   return (double) myEnc.read() / (double) MAX_TICKS_1;
+// }
