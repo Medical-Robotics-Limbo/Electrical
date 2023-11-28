@@ -1,70 +1,40 @@
 #include <Encoder.h>
 
-uint8_t mot1;
-uint8_t mot2;
-
-uint8_t motWEnc1 = 10;
-uint8_t motWEnc2 = 11;
+uint8_t mot1 = 10;
+uint8_t mot2 = 11;
 
 uint8_t encodeA = 2;
 uint8_t encodeB = 3;
 
+double kP, kI, kD;
+
+double targetPosition;
+
 const int MAX_TICKS_1 = 500;
 
-//Encoder myEnc(encodeA, encodeB);
+double error, accumulatedError, errorChange;
 
-uint8_t emg = 14;
-volatile boolean toggle = false;
+Encoder myEnc(encodeA, encodeB);
+
 void setup() {
-  // put your setup code here, to run once:
-  setMotor(7, 6);  
-  // pinMode(emg, INPUT_PULLUP);
-
-  pinMode(encodeA, OUTPUT);
-  pinMode(encodeB, OUTPUT);
+  pinMode(encodeA, INPUT);
+  pinMode(encodeB, INPUT);
   digitalWrite(motWEnc1, LOW);
   digitalWrite(motWEnc2, LOW);
-
-  //myEnc.write(0);
 
   Serial.begin(9600);
 }
 
 void loop() {
-  /* The prints should give the pin readouts for the encoders. If the readouts will give
-  (0,0) and then (0,1) then the output should be decreasing and it's most likely a library issue, if not
-  it's probably a hardware thing
-  */
+  // code will run repeatedly:
+  setMotor(mot1, mot2);
 
+  // spinMotorAtSpeed((updatePIDController(getCurrentFingerPosition())));
 
-  // put your main code here, to run repeatedly:
-  stopMotor();
-  Serial.print("a: ");
-  Serial.print(digitalRead(encodeA));
-  Serial.print(" b: ");
-  Serial.println(digitalRead(encodeB));
-  // Serial.println(getFinger1Closed());
-  
-  // digitalWrite(motWEnc1, HIGH);
-  // digitalWrite(motWEnc2, LOW);
-  // delay(2000);
-  // digitalWrite(motWEnc1, LOW);
-  // digitalWrite(motWEnc2, HIGH);
-
-  // spinMotor(true);
-  // delay(1000);
-  // spinMotor(false);
-  // delay(1000);
-
-//   if(digitalRead(emg) == 0 && !toggle)
-//   {
-//     toggle = true;
-//     spinMotor(true);
-//     delay(4000);
-//     spinMotor(false);
-//     delay(4000);
-//     toggle = false;
-//   }
+  // Serial.print("a: ");
+  // Serial.print(digitalRead(encodeA));
+  // Serial.print(" b: ");
+  // Serial.println(digitalRead(encodeB));
 }
 
 void setMotor(uint8_t _mot1, uint8_t _mot2) {
@@ -79,18 +49,40 @@ void spinMotor(bool dir) {
   if (dir) {
     digitalWrite(mot1, HIGH);
     digitalWrite(mot2, LOW);
-    }
-  else {
+    } else {
     digitalWrite(mot1, LOW);
     digitalWrite(mot2, HIGH);
     }
+}
+
+// Should spin the motor at a percentage of full output (from 0 to 1) using a PWM signal. Need to figure out directions
+void spinMotorAtSpeed(double speed) {
+  int dutyCycle = (int) (abs(speed) * 256);
+  if (speed >= 0) {
+    analogWrite(mot1, dutyCycle);
+    digitalWrite(mot2, LOW);
+  } else {
+    digitalWrite(mot1, LOW);
+    analogWrite(mot2, dutyCycle);
   }
+}
 
 void stopMotor() {
   digitalWrite(mot1, LOW);
   digitalWrite(mot2, LOW);
-  }
+}
 
-// double getFinger1Closed() {
-//   return (double) myEnc.read() / (double) MAX_TICKS_1;
-// }
+// returns finger position, expressed as a number between 0 (fully open) and 1 (fully closed)
+double getCurrentFingerPosition() {
+  return (double) myEnc.read() / (double) MAX_TICKS_1;
+}
+
+// should be called each loop - gives desired output (between -1 and 1) and updates controller
+double updatePIDController(double currentPosition) {
+  double prevError = error;
+  error = targetPosition - currentPosition;
+  accumulatedError += error;
+  errorChange = error - prevError;
+
+  return kP * error + kI * accumulatedError + kD * errorChange;
+}
