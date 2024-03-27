@@ -2,7 +2,7 @@
 #include <Wire.h>
 
 unsigned int adcRead;
-uint8_t chan = 2;
+uint8_t chan = 0;
 
 void setup() {
   // I2C setup
@@ -27,23 +27,24 @@ uint8_t channel(int chan) {
   return SPI.transfer(chan << 3) << 6;
 }
 
-void writeI2C(int chan, int data)
-{
-  Wire.beginTransmission(chan);
-  Wire.write(data)l
-  Wire.endTransmission();
-}
+// void writeI2C(int chan, int data)
+// {
+//   Wire.beginTransmission(chan);
+//   Wire.write(data)l
+//   Wire.endTransmission();
+// }
 
-uint8_t getI2C(int chan)
-{
-  Wire.requestfrom(chan);
-  if (Wire.available())
-  {
-    return Wire.read();
-  }
-}
+// uint8_t getI2C(int chan)
+// {
+//   Wire.requestfrom(chan);
+//   if (Wire.available())
+//   {
+//     return Wire.read();
+//   }
+// }
 
 void loop() {
+  Serial.println("test");
   adcRead = channel(chan);
   // send dummy value, receives lower data bits 5:0
   // ADC output is 6 bit with 2 extra 0s => >> 2
@@ -52,8 +53,8 @@ void loop() {
   Serial.println(adcRead);
 
   // I2C setup
-  writeI2C(0x1, 1);
-  getI2C(0x1);
+  // writeI2C(0x1, 1);
+  // getI2C(0x1);
   
   delay(250);
 }
