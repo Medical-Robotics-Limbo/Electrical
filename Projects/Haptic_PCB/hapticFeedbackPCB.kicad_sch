@@ -2165,7 +2165,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_5W_P10.16mm_Horizontal"
 			(at 109.22 52.07 0)
 			(effects
 				(font
@@ -2251,7 +2251,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 90.17 131.318 90)
 			(effects
 				(font
@@ -2629,7 +2629,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 90.17 95.758 90)
 			(effects
 				(font
@@ -3059,7 +3059,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_5W_P10.16mm_Horizontal"
 			(at 110.49 85.09 0)
 			(effects
 				(font
@@ -3215,7 +3215,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 90.17 62.738 90)
 			(effects
 				(font
@@ -3285,7 +3285,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_5W_P10.16mm_Horizontal"
 			(at 110.49 120.65 0)
 			(effects
 				(font
