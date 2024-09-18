@@ -74,7 +74,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "Haptic_PCB.kicad_prl",
+    "filename": "hapticFeedbackPCB.kicad_prl",
     "version": 3
   },
   "project": {
