@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "Molex 2 x 1")(type "KiCad")(uri "C:/Users/mdpha/Downloads/ul_430450212/KiCADv6/footprints.pretty")(options "")(descr ""))
   (lib (name "Molex 2 x 2")(type "KiCad")(uri "C:/Users/mdpha/Downloads/ul_430450413/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "NPN")(type "KiCad")(uri "C:/Users/mdpha/Downloads/2N2222/KiCADv6/footprints.pretty")(options "")(descr ""))
 )
