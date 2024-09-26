@@ -2183,6 +2183,12 @@
 		(uuid "b628b275-30ef-4e3d-8f71-6a0728c23fcb")
 	)
 	(junction
+		(at 152.4 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b80455dd-bb32-49cb-823b-13d892ff5cf9")
+	)
+	(junction
 		(at 110.49 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2199,12 +2205,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c8361606-39a6-4881-a51e-9d07b05a84f0")
-	)
-	(junction
-		(at 152.4 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d4887e61-4593-4916-a507-a80e9a2ec4df")
 	)
 	(junction
 		(at 110.49 124.46)
@@ -2281,16 +2281,6 @@
 			(type default)
 		)
 		(uuid "3513a68e-ef64-445d-a2b2-a5bb0b6e389c")
-	)
-	(wire
-		(pts
-			(xy 152.4 35.56) (xy 152.4 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4482ad4e-f47a-4826-8f5f-07e1f2818e75")
 	)
 	(wire
 		(pts
@@ -2484,16 +2474,6 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 45.72) (xy 55.88 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1fbbd74-51f1-41b9-b6cf-7fe4118cd667")
-	)
-	(wire
-		(pts
 			(xy 81.28 129.54) (xy 81.28 43.18)
 		)
 		(stroke
@@ -2521,16 +2501,6 @@
 			(type default)
 		)
 		(uuid "ab57efbb-2948-46bf-8e46-374d17c4d4f0")
-	)
-	(wire
-		(pts
-			(xy 55.88 35.56) (xy 152.4 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aee2b4ee-a5fd-4f1d-a4db-791726d51c77")
 	)
 	(wire
 		(pts
@@ -3761,6 +3731,72 @@
 			(project ""
 				(path "/8672886c-60c5-432f-932f-9e8bb677a199"
 					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 152.4 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8db7a028-b073-4d4f-8338-46f46d30b3e5")
+		(property "Reference" "#PWR08"
+			(at 152.4 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 152.4 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 152.4 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3c586ead-c670-4087-a637-8de7ed1595ae")
+		)
+		(instances
+			(project "hapticFeedbackPCB"
+				(path "/8672886c-60c5-432f-932f-9e8bb677a199"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
