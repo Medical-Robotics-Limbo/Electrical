@@ -801,7 +801,19 @@
 		(at 201.93 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "360a4b64-cb85-492d-b8f8-417888b4d563")
+		(uuid "269f0124-42a0-4098-bd05-8515e4db18d5")
+	)
+	(junction
+		(at 142.24 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2765bbdb-787b-403f-b257-5d194e553326")
+	)
+	(junction
+		(at 170.18 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "57ee4b1a-d44d-45af-8181-1211e6e46a20")
 	)
 	(junction
 		(at 177.8 60.96)
@@ -834,12 +846,6 @@
 		(uuid "80c2ac90-0bb2-4724-a721-cbeeb30a5f0d")
 	)
 	(junction
-		(at 170.18 74.93)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "83aa08cf-ed43-4827-8cdc-3edc44fb7f87")
-	)
-	(junction
 		(at 118.11 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -856,12 +862,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9e4cbaa7-0828-4c46-b70e-e986a03b66d1")
-	)
-	(junction
-		(at 142.24 74.93)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a43209ed-12a1-42d4-b4a7-6cae29dfa8ef")
 	)
 	(junction
 		(at 113.03 74.93)
@@ -882,15 +882,15 @@
 		(uuid "eda509c1-9c1d-43c2-8615-537eeb91d314")
 	)
 	(no_connect
-		(at 200.66 57.15)
+		(at 199.39 60.96)
 		(uuid "0e58501d-4de9-4d61-a7fa-76cf0b67f618")
 	)
 	(no_connect
-		(at 140.97 57.15)
+		(at 139.7 60.96)
 		(uuid "21c9ba28-f4d9-4793-a79e-8c602060d226")
 	)
 	(no_connect
-		(at 168.91 57.15)
+		(at 167.64 60.96)
 		(uuid "9db4a060-129f-49c6-8b41-2939d369c8e1")
 	)
 	(wire
@@ -905,17 +905,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 57.15) (xy 170.18 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "160056eb-e204-4143-a9eb-f2877e34ac76")
-	)
-	(wire
-		(pts
-			(xy 142.24 57.15) (xy 142.24 59.69)
+			(xy 142.24 60.96) (xy 142.24 74.93)
 		)
 		(stroke
 			(width 0)
@@ -972,6 +962,16 @@
 			(type default)
 		)
 		(uuid "366376bd-6a97-4ba5-8fed-90b48562aabc")
+	)
+	(wire
+		(pts
+			(xy 170.18 60.96) (xy 170.18 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37495a46-2b9b-4a2e-82af-4e0b3a3aafb0")
 	)
 	(wire
 		(pts
@@ -1042,16 +1042,6 @@
 			(type default)
 		)
 		(uuid "541b3147-d4e0-4984-b7db-06324ce31b10")
-	)
-	(wire
-		(pts
-			(xy 201.93 57.15) (xy 203.2 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "574ea461-f52f-4dc1-82ef-6b55ce9781e5")
 	)
 	(wire
 		(pts
@@ -1135,6 +1125,16 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 60.96) (xy 201.93 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a8f856c-0e8b-45b9-a80c-d66b6b0cbc0e")
+	)
+	(wire
+		(pts
 			(xy 177.8 90.17) (xy 177.8 74.93)
 		)
 		(stroke
@@ -1165,16 +1165,6 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 57.15) (xy 201.93 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5eeea42-a6f2-4d3e-8ef7-4b59dd8f7e06")
-	)
-	(wire
-		(pts
 			(xy 209.55 71.12) (xy 209.55 74.93)
 		)
 		(stroke
@@ -1195,16 +1185,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 57.15) (xy 171.45 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5de964a-dd8c-42a1-9951-91c054d987ee")
-	)
-	(wire
-		(pts
 			(xy 142.24 74.93) (xy 149.86 74.93)
 		)
 		(stroke
@@ -1222,16 +1202,6 @@
 			(type default)
 		)
 		(uuid "d2160147-0c54-4951-8968-233871b331f9")
-	)
-	(wire
-		(pts
-			(xy 142.24 57.15) (xy 143.51 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d94b6c9d-5236-445f-8a4c-d2f2167e6e29")
 	)
 	(wire
 		(pts
@@ -1304,76 +1274,6 @@
 		(uuid "fd293452-ce1b-4206-b2d2-1ec151e89996")
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 201.93 63.5 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "082ab21e-fc63-4dff-b07e-3071ba1288bb")
-		(property "Reference" "R9"
-			(at 199.39 64.7701 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10,000"
-			(at 199.39 62.2301 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 203.708 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 201.93 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 201.93 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "356020c8-95ee-4b0d-a2be-98c9d9814e92")
-		)
-		(pin "2"
-			(uuid "60900fa3-1888-4173-b734-28e30df9f686")
-		)
-		(instances
-			(project "Power Management PCB"
-				(path "/b6c6b304-6c75-46a2-a0ec-4ae8a24ca1c3"
-					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
 		(at 110.49 97.79 0)
 		(unit 1)
@@ -1441,78 +1341,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 142.24 63.5 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1bd1bd2e-59f3-4e1b-961c-553667bd2753")
-		(property "Reference" "R6"
-			(at 139.7 64.7701 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10,000"
-			(at 139.7 62.2301 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 144.018 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 142.24 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 142.24 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a0b93817-8d6f-4304-88e7-96cb3cd2636f")
-		)
-		(pin "2"
-			(uuid "e70612d9-7348-46d0-a669-c6a3229cb480")
-		)
-		(instances
-			(project "Power Management PCB"
-				(path "/b6c6b304-6c75-46a2-a0ec-4ae8a24ca1c3"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 143.51 52.07 270)
+		(at 142.24 55.88 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1521,7 +1351,7 @@
 		(fields_autoplaced yes)
 		(uuid "3344ef96-6e21-4dd2-9a69-850517c94e76")
 		(property "Reference" "J1"
-			(at 144.78 51.4349 90)
+			(at 143.51 55.2449 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1530,7 +1360,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Pin"
-			(at 144.78 53.9749 90)
+			(at 143.51 57.7849 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1539,7 +1369,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical_SMD_Pin1Left"
-			(at 143.51 52.07 0)
+			(at 142.24 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1548,7 +1378,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 143.51 52.07 0)
+			(at 142.24 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1557,7 +1387,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 143.51 52.07 0)
+			(at 142.24 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1656,16 +1486,15 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 203.2 52.07 270)
+		(at 201.93 55.88 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "39b55fb7-60d5-46ce-aacc-934da0ba6773")
 		(property "Reference" "J3"
-			(at 204.47 51.4349 90)
+			(at 203.2 55.2449 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1674,7 +1503,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Pin"
-			(at 204.47 53.9749 90)
+			(at 203.2 57.7849 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1683,7 +1512,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical_SMD_Pin1Left"
-			(at 203.2 52.07 0)
+			(at 201.93 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1692,7 +1521,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 203.2 52.07 0)
+			(at 201.93 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1701,7 +1530,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 203.2 52.07 0)
+			(at 201.93 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1928,16 +1757,15 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 171.45 52.07 270)
+		(at 170.18 55.88 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "46dff7ad-91c3-4206-9def-759df4f01b3f")
 		(property "Reference" "J2"
-			(at 172.72 51.4349 90)
+			(at 171.45 55.2449 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1946,7 +1774,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Pin"
-			(at 172.72 53.9749 90)
+			(at 171.45 57.7849 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1955,7 +1783,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical_SMD_Pin1Left"
-			(at 171.45 52.07 0)
+			(at 170.18 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1964,7 +1792,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 171.45 52.07 0)
+			(at 170.18 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1973,7 +1801,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 171.45 52.07 0)
+			(at 170.18 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1998,76 +1826,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 142.24 71.12 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "586b5ea1-9840-40cd-a9c8-d2001e8406e5")
-		(property "Reference" "R5"
-			(at 139.7 72.3901 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1,000"
-			(at 139.7 69.8501 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 144.018 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 142.24 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 142.24 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1e308735-2090-4b8c-92b9-205011aa5f33")
-		)
-		(pin "2"
-			(uuid "54b3785e-5b6a-4e33-ad78-a11508a3d19b")
-		)
-		(instances
-			(project "Power Management PCB"
-				(path "/b6c6b304-6c75-46a2-a0ec-4ae8a24ca1c3"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 142.24 78.74 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2077,21 +1835,21 @@
 		(fields_autoplaced yes)
 		(uuid "5b590801-245b-4111-8c83-6945848b6066")
 		(property "Reference" "R4"
-			(at 139.7 80.0101 0)
+			(at 144.78 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "300"
-			(at 139.7 77.4701 0)
+		(property "Value" "125"
+			(at 144.78 80.0099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
@@ -2351,76 +2109,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 170.18 71.12 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9dea0d15-5ef4-425e-bb54-7d056488849a")
-		(property "Reference" "R2"
-			(at 167.64 72.3901 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1,000"
-			(at 167.64 69.8501 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 171.958 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 170.18 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 170.18 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a54a520c-538e-42a8-aa9f-52b46fd22bfc")
-		)
-		(pin "2"
-			(uuid "c4f77794-c2cd-4a75-81e1-f535df93cc50")
-		)
-		(instances
-			(project "Power Management PCB"
-				(path "/b6c6b304-6c75-46a2-a0ec-4ae8a24ca1c3"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 177.8 67.31 180)
 		(unit 1)
@@ -2494,76 +2182,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 170.18 63.5 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b8957bf0-f729-465c-a192-570919f010af")
-		(property "Reference" "R3"
-			(at 167.64 64.7701 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10,000"
-			(at 167.64 62.2301 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 171.958 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 170.18 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 170.18 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0d41e752-dbaa-4a47-bb0a-b8f6bbc1e022")
-		)
-		(pin "2"
-			(uuid "6377bd44-59b1-40fb-9905-c9f060583943")
-		)
-		(instances
-			(project "Power Management PCB"
-				(path "/b6c6b304-6c75-46a2-a0ec-4ae8a24ca1c3"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 149.86 67.31 180)
 		(unit 1)
@@ -2631,76 +2249,6 @@
 			(project ""
 				(path "/b6c6b304-6c75-46a2-a0ec-4ae8a24ca1c3"
 					(reference "RV1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 201.93 71.12 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eed2892d-e6b9-43d9-ba74-84187e04cfb3")
-		(property "Reference" "R10"
-			(at 199.39 72.3901 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1,000"
-			(at 199.39 69.8501 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 203.708 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 201.93 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 201.93 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fba591b2-5bc9-40c8-aa0d-4eecfcee0274")
-		)
-		(pin "2"
-			(uuid "072138de-76bf-4946-a658-00e24fad464d")
-		)
-		(instances
-			(project "Power Management PCB"
-				(path "/b6c6b304-6c75-46a2-a0ec-4ae8a24ca1c3"
-					(reference "R10")
 					(unit 1)
 				)
 			)
